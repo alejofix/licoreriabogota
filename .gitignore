@@ -1,0 +1,12 @@
+###> symfony/framework-fix ###
+/var/cache/
+/var/cache/*
+/_fix/_top/
+/_fix/_top/*
+/.idea/
+/.idea/*
+.idea/
+.idea/*
+###< symfony/framework-fix ###
+
+
