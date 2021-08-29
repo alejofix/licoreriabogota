@@ -1,2 +1,21 @@
 {% extends 'base.html.twig' %}
 
+{% block body %}
+
+    <!--Main Slider Sections//-->
+    {{ include('base/section_slider.html.twig') }}
+
+    <!--Information Sections-->
+    {{ include('base/section_information.html.twig') }}
+
+    <!-- inicio contenido -->
+
+
+{% endblock %}
+
+
+{% block js  %}
+    {{ parent() }}
+
+{% endblock %}
+

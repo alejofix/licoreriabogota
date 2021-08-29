@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CorreoDeLaNocheController extends AbstractController
 {
     /**
-     * @Route("/", name="inicio")
+     * @Route("/", name="index", methods={"GET"})
      */
     public function index(): Response
     {
@@ -17,4 +17,16 @@ class CorreoDeLaNocheController extends AbstractController
             'controller_name' => 'CorreoDeLaNocheController',
         ]);
     }
+
+    /**
+     * @Route("/correo_de_la_noche", name="correo", methods={"GET"})
+     */
+    public function correo(): Response
+    {
+        return $this->render('correo_de_la_noche/correo_de_la_noche.html.twig', [
+            'controller_name' => 'CorreoDeLaNocheController',
+        ]);
+    }
+
+
 }
