@@ -28,5 +28,15 @@ class CorreoDeLaNocheController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/correo_de_la_noche/lista", name="lista", methods={"GET"})
+     */
+    public function lista(): Response
+    {
+        return $this->render('correo_de_la_noche/lista.html.twig', [
+            'controller_name' => 'CorreoDeLaNocheController',
+        ]);
+    }
+
 
 }
