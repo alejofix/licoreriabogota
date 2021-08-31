@@ -1,6 +1,8 @@
 ###> symfony/framework-fix ###
 /var/cache/
 /var/cache/*
+/var/log/
+/var/log/*
 /_fix/_top/
 /_fix/_top/*
 /.idea/

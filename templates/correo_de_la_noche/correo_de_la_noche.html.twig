@@ -2,21 +2,18 @@
 
 {% block body %}
 
-    <section class="ct-contactSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <br/><br/><br /><br />
-                    <header class="ct-bigHeader">Licorería Bogotá</header>
-                    <span class="ct-smallHeader">Domicilio rápido y seguro en toda la Ciudad</span>
-                   
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--Information Sections-->
+    {{ include('base/correo/section_information.html.twig') }}
+    <!-- construccion -->
+    {{ include('base/section_construccion.html.twig') }}
+
+    <!-- body -->
+
+    <!-- end body -->
 
 
-
+    <!--footer -->
+    {{ include('base/footer.html.twig') }}
 
 {% endblock %}
 
