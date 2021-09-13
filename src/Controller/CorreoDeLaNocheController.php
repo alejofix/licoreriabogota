@@ -58,4 +58,14 @@ class CorreoDeLaNocheController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/correo_de_la_noche/pagos", name="pagos", methods={"GET"})
+     */
+    public function pagos(): Response
+    {
+        return $this->render('correo_de_la_noche/pagos.html.twig', [
+            'controller_name' => 'CorreoDeLaNocheController',
+        ]);
+    }
+
 }

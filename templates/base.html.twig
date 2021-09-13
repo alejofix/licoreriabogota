@@ -7,6 +7,9 @@
 
 <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {{ include('google_analytics.html.twig') }}
+
     {% block style %}
     <meta charset="UTF-8">
     <meta name="correo de la noche" content="Licorería Bogotá">
@@ -63,9 +66,11 @@
     <!--Twitter-->
     <script src="{{ asset('assets/twitter/js/jquery.tweet.js') }}"></script>
     <!-- Google Maps-->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCheNy7zWQrflLP-TMOt8rmOFWt22GbuZA&libraries=places,geometry"></script> -->
+    {#
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCheNy7zWQrflLP-TMOt8rmOFWt22GbuZA&libraries=places,geometry"></script>
     <script src="{{ asset('assets/js/gmaps/gmap3.min.js') }}"></script>
     <script src="{{ asset('assets/js/gmaps/init.js') }}"></script>
+    #}
     <!-- Grayscale Plugin-->
     <script src="{{ asset('assets/js/jquery.gray.min.js') }}"></script>
     <!-- Portfolio Isotope-->

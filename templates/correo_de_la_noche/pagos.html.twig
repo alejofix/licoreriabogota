@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!--Information Sections-->
+    {{ include('base/pagos/section_information.html.twig') }}
+    <!-- metodos de pago -->
+
+    <!-- body -->
+
+    <!-- end body -->
+
+
+    <!--footer -->
+    {{ include('base/footer.html.twig') }}
+
+
+{% endblock %}
+
+
+{% block js  %}
+    {{ parent() }}
+
+{% endblock %}
+
